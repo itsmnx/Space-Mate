@@ -3,8 +3,6 @@
 
 <div align="center">
 
-![SpaceMate Logo](https://via.placeholder.com/150x150/0e639c/ffffff?text=SM)
-
 **An intelligent, offline disk space manager built with OS-level system calls**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
