@@ -12,7 +12,7 @@
 [![Language: C/C++](https://img.shields.io/badge/Language-C%2FC%2B%2B-green.svg)](https://isocpp.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [Documentation](#-documentation) • [Team](#-team)
+[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [Documentation](#-documentation) 
 
 </div>
 
@@ -638,55 +638,6 @@ cat ~/.spacemate/logs/spacemate.log
 
 ---
 
-## 👥 Team
-
-**Team #057 - Raptors**  
-*BTech Computer Science & Engineering*
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://via.placeholder.com/100" width="100px;" alt="Manas Joshi"/><br />
-      <sub><b>Manas Joshi</b></sub><br />
-      <sub>Team Lead</sub><br />
-      <sub>230211450</sub><br />
-      <a href="mailto:jmanas275@gmail.com">📧 Email</a>
-    </td>
-    <td align="center">
-      <img src="https://via.placeholder.com/100" width="100px;" alt="Harshit Suyal"/><br />
-      <sub><b>Harshit Suyal</b></sub><br />
-      <sub>Developer</sub><br />
-      <sub>230213596</sub><br />
-      <a href="mailto:harshitsuyal2000@gmail.com">📧 Email</a>
-    </td>
-    <td align="center">
-      <img src="https://via.placeholder.com/100" width="100px;" alt="Saumya Pratap Singh"/><br />
-      <sub><b>Saumya Pratap Singh</b></sub><br />
-      <sub>Developer</sub><br />
-      <sub>23022353</sub><br />
-      <a href="mailto:saumya246761@gmail.com">📧 Email</a>
-    </td>
-    <td align="center">
-      <img src="https://via.placeholder.com/100" width="100px;" alt="Aishwary Bisht"/><br />
-      <sub><b>Aishwary Bisht</b></sub><br />
-      <sub>Developer</sub><br />
-      <sub>230211549</sub><br />
-      <a href="mailto:bishtvaibhav2@gmail.com">📧 Email</a>
-    </td>
-  </tr>
-</table>
-
-### Contributions
-
-| Team Member | Role | Modules |
-|-------------|------|---------|
-| Manas Joshi | Lead Developer | Architecture, Disk Monitor, Integration |
-| Harshit Suyal | Core Developer | File Analyzer, Duplicate Detection, Testing |
-| Saumya Pratap Singh | Core Developer | Cleanup Engine, CLI Interface |
-| Aishwary Bisht | Core Developer | Backup System, Recovery, Documentation |
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -726,9 +677,7 @@ in the Software without restriction...
 ### Get in Touch
 
 - **Email**: jmanas275@gmail.com
-- **Project Link**: [https://github.com/team-raptors/spacemate](https://github.com/team-raptors/spacemate)
-- **Report Issues**: [GitHub Issues](https://github.com/team-raptors/spacemate/issues)
-
+  
 ### Stay Updated
 
 - ⭐ Star this repo to show support
@@ -736,16 +685,6 @@ in the Software without restriction...
 - 🍴 Fork to contribute
 
 ---
-
-## 📈 Project Stats
-
-![GitHub stars](https://img.shields.io/github/stars/team-raptors/spacemate?style=social)
-![GitHub forks](https://img.shields.io/github/forks/team-raptors/spacemate?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/team-raptors/spacemate?style=social)
-
-![GitHub last commit](https://img.shields.io/github/last-commit/team-raptors/spacemate)
-![GitHub issues](https://img.shields.io/github/issues/team-raptors/spacemate)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/team-raptors/spacemate)
 
 ---
 
