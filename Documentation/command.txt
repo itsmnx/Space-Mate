@@ -1,0 +1,16 @@
+normal execution-
+manas_pc@Manas-PC:/mnt/c/Users/jmana/OneDrive/Desktop/Projects/Spacemate$ cd "/mnt/c/Users/jmana/OneDrive/Desktop/Projects/Spacemate"
+manas_pc@Manas-PC:/mnt/c/Users/jmana/OneDrive/Desktop/Projects/Spacemate$ g++ -I./include main.cpp core/*.cpp -o spacemate
+manas_pc@Manas-PC:/mnt/c/Users/jmana/OneDrive/Desktop/Projects/Spacemate$ ./spacemate
+
+using make-
+cd "/mnt/c/Users/jmana/OneDrive/Desktop/Projects/Spacemate"
+make
+./spacemate
+
+OR
+sudo make install
+spacemate
+
+
+
