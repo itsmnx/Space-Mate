@@ -34,6 +34,9 @@ public:
 
     // Make loadBackupIndex public so GUI can access backup history
     std::vector<BackupEntry> loadBackupIndex();
+    
+    // Add backup entry to index
+    void addBackupIndexEntry(const std::string& originalPath, const std::string& backupPath);
 
 private:
     bool copyFile(const std::string& source, const std::string& dest);

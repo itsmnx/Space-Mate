@@ -189,8 +189,8 @@ void ScanWorker::scanError(const QString & _t1)
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[22];
-    char stringdata0[279];
+    QByteArrayData data[31];
+    char stringdata0[404];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -200,37 +200,49 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 14), // "selectScanPath"
+QT_MOC_LITERAL(1, 11, 14), // "updateDiskInfo"
 QT_MOC_LITERAL(2, 26, 0), // ""
-QT_MOC_LITERAL(3, 27, 9), // "startScan"
-QT_MOC_LITERAL(4, 37, 14), // "onScanComplete"
-QT_MOC_LITERAL(5, 52, 11), // "ScanResults"
-QT_MOC_LITERAL(6, 64, 7), // "results"
-QT_MOC_LITERAL(7, 72, 15), // "DuplicateGroups"
-QT_MOC_LITERAL(8, 88, 10), // "duplicates"
-QT_MOC_LITERAL(9, 99, 11), // "onScanError"
-QT_MOC_LITERAL(10, 111, 5), // "error"
-QT_MOC_LITERAL(11, 117, 19), // "deleteFileFromTable"
-QT_MOC_LITERAL(12, 137, 3), // "row"
-QT_MOC_LITERAL(13, 141, 18), // "deleteFileFromPath"
-QT_MOC_LITERAL(14, 160, 4), // "path"
-QT_MOC_LITERAL(15, 165, 14), // "cleanTempFiles"
-QT_MOC_LITERAL(16, 180, 10), // "cleanCache"
-QT_MOC_LITERAL(17, 191, 14), // "performCleanup"
-QT_MOC_LITERAL(18, 206, 18), // "selectBackupSource"
-QT_MOC_LITERAL(19, 225, 23), // "selectBackupDestination"
-QT_MOC_LITERAL(20, 249, 12), // "createBackup"
-QT_MOC_LITERAL(21, 262, 16) // "toggleMonitoring"
+QT_MOC_LITERAL(3, 27, 16), // "refreshDashboard"
+QT_MOC_LITERAL(4, 44, 14), // "selectScanPath"
+QT_MOC_LITERAL(5, 59, 9), // "startScan"
+QT_MOC_LITERAL(6, 69, 14), // "onScanComplete"
+QT_MOC_LITERAL(7, 84, 11), // "ScanResults"
+QT_MOC_LITERAL(8, 96, 7), // "results"
+QT_MOC_LITERAL(9, 104, 15), // "DuplicateGroups"
+QT_MOC_LITERAL(10, 120, 10), // "duplicates"
+QT_MOC_LITERAL(11, 131, 11), // "onScanError"
+QT_MOC_LITERAL(12, 143, 5), // "error"
+QT_MOC_LITERAL(13, 149, 19), // "deleteFileFromTable"
+QT_MOC_LITERAL(14, 169, 3), // "row"
+QT_MOC_LITERAL(15, 173, 18), // "deleteFileFromPath"
+QT_MOC_LITERAL(16, 192, 4), // "path"
+QT_MOC_LITERAL(17, 197, 14), // "cleanTempFiles"
+QT_MOC_LITERAL(18, 212, 10), // "cleanCache"
+QT_MOC_LITERAL(19, 223, 14), // "performCleanup"
+QT_MOC_LITERAL(20, 238, 20), // "populateCleanupTable"
+QT_MOC_LITERAL(21, 259, 18), // "selectBackupSource"
+QT_MOC_LITERAL(22, 278, 23), // "selectBackupDestination"
+QT_MOC_LITERAL(23, 302, 12), // "createBackup"
+QT_MOC_LITERAL(24, 315, 17), // "updateBackupTable"
+QT_MOC_LITERAL(25, 333, 16), // "toggleMonitoring"
+QT_MOC_LITERAL(26, 350, 21), // "updateMonitoringStats"
+QT_MOC_LITERAL(27, 372, 6), // "addLog"
+QT_MOC_LITERAL(28, 379, 7), // "message"
+QT_MOC_LITERAL(29, 387, 6), // "status"
+QT_MOC_LITERAL(30, 394, 9) // "clearLogs"
 
     },
-    "MainWindow\0selectScanPath\0\0startScan\0"
-    "onScanComplete\0ScanResults\0results\0"
-    "DuplicateGroups\0duplicates\0onScanError\0"
-    "error\0deleteFileFromTable\0row\0"
-    "deleteFileFromPath\0path\0cleanTempFiles\0"
-    "cleanCache\0performCleanup\0selectBackupSource\0"
-    "selectBackupDestination\0createBackup\0"
-    "toggleMonitoring"
+    "MainWindow\0updateDiskInfo\0\0refreshDashboard\0"
+    "selectScanPath\0startScan\0onScanComplete\0"
+    "ScanResults\0results\0DuplicateGroups\0"
+    "duplicates\0onScanError\0error\0"
+    "deleteFileFromTable\0row\0deleteFileFromPath\0"
+    "path\0cleanTempFiles\0cleanCache\0"
+    "performCleanup\0populateCleanupTable\0"
+    "selectBackupSource\0selectBackupDestination\0"
+    "createBackup\0updateBackupTable\0"
+    "toggleMonitoring\0updateMonitoringStats\0"
+    "addLog\0message\0status\0clearLogs"
 };
 #undef QT_MOC_LITERAL
 
@@ -240,7 +252,7 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      20,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -248,33 +260,47 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   79,    2, 0x08 /* Private */,
-       3,    0,   80,    2, 0x08 /* Private */,
-       4,    2,   81,    2, 0x08 /* Private */,
-       9,    1,   86,    2, 0x08 /* Private */,
-      11,    1,   89,    2, 0x08 /* Private */,
-      13,    1,   92,    2, 0x08 /* Private */,
-      15,    0,   95,    2, 0x08 /* Private */,
-      16,    0,   96,    2, 0x08 /* Private */,
-      17,    0,   97,    2, 0x08 /* Private */,
-      18,    0,   98,    2, 0x08 /* Private */,
-      19,    0,   99,    2, 0x08 /* Private */,
-      20,    0,  100,    2, 0x08 /* Private */,
-      21,    0,  101,    2, 0x08 /* Private */,
+       1,    0,  114,    2, 0x08 /* Private */,
+       3,    0,  115,    2, 0x08 /* Private */,
+       4,    0,  116,    2, 0x08 /* Private */,
+       5,    0,  117,    2, 0x08 /* Private */,
+       6,    2,  118,    2, 0x08 /* Private */,
+      11,    1,  123,    2, 0x08 /* Private */,
+      13,    1,  126,    2, 0x08 /* Private */,
+      15,    1,  129,    2, 0x08 /* Private */,
+      17,    0,  132,    2, 0x08 /* Private */,
+      18,    0,  133,    2, 0x08 /* Private */,
+      19,    0,  134,    2, 0x08 /* Private */,
+      20,    1,  135,    2, 0x08 /* Private */,
+      21,    0,  138,    2, 0x08 /* Private */,
+      22,    0,  139,    2, 0x08 /* Private */,
+      23,    0,  140,    2, 0x08 /* Private */,
+      24,    0,  141,    2, 0x08 /* Private */,
+      25,    0,  142,    2, 0x08 /* Private */,
+      26,    0,  143,    2, 0x08 /* Private */,
+      27,    2,  144,    2, 0x08 /* Private */,
+      30,    0,  149,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 5, 0x80000000 | 7,    6,    8,
-    QMetaType::Void, QMetaType::QString,   10,
-    QMetaType::Void, QMetaType::Int,   12,
-    QMetaType::Void, QMetaType::QString,   14,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 7, 0x80000000 | 9,    8,   10,
+    QMetaType::Void, QMetaType::QString,   12,
+    QMetaType::Void, QMetaType::Int,   14,
+    QMetaType::Void, QMetaType::QString,   16,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 7,    8,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,   28,   29,
     QMetaType::Void,
 
        0        // eod
@@ -286,29 +312,43 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->selectScanPath(); break;
-        case 1: _t->startScan(); break;
-        case 2: _t->onScanComplete((*reinterpret_cast< const ScanResults(*)>(_a[1])),(*reinterpret_cast< const DuplicateGroups(*)>(_a[2]))); break;
-        case 3: _t->onScanError((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 4: _t->deleteFileFromTable((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 5: _t->deleteFileFromPath((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 6: _t->cleanTempFiles(); break;
-        case 7: _t->cleanCache(); break;
-        case 8: _t->performCleanup(); break;
-        case 9: _t->selectBackupSource(); break;
-        case 10: _t->selectBackupDestination(); break;
-        case 11: _t->createBackup(); break;
-        case 12: _t->toggleMonitoring(); break;
+        case 0: _t->updateDiskInfo(); break;
+        case 1: _t->refreshDashboard(); break;
+        case 2: _t->selectScanPath(); break;
+        case 3: _t->startScan(); break;
+        case 4: _t->onScanComplete((*reinterpret_cast< const ScanResults(*)>(_a[1])),(*reinterpret_cast< const DuplicateGroups(*)>(_a[2]))); break;
+        case 5: _t->onScanError((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 6: _t->deleteFileFromTable((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: _t->deleteFileFromPath((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 8: _t->cleanTempFiles(); break;
+        case 9: _t->cleanCache(); break;
+        case 10: _t->performCleanup(); break;
+        case 11: _t->populateCleanupTable((*reinterpret_cast< const ScanResults(*)>(_a[1]))); break;
+        case 12: _t->selectBackupSource(); break;
+        case 13: _t->selectBackupDestination(); break;
+        case 14: _t->createBackup(); break;
+        case 15: _t->updateBackupTable(); break;
+        case 16: _t->toggleMonitoring(); break;
+        case 17: _t->updateMonitoringStats(); break;
+        case 18: _t->addLog((*reinterpret_cast< const QString(*)>(_a[1])),(*reinterpret_cast< const QString(*)>(_a[2]))); break;
+        case 19: _t->clearLogs(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
         default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-        case 2:
+        case 4:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<int*>(_a[0]) = -1; break;
             case 1:
                 *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< DuplicateGroups >(); break;
+            case 0:
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< ScanResults >(); break;
+            }
+            break;
+        case 11:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
             case 0:
                 *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< ScanResults >(); break;
             }
@@ -346,13 +386,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 20)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 20;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 20)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 20;
     }
     return _id;
 }

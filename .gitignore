@@ -1,0 +1,36 @@
+# Build directories
+build/
+bin/
+*.o
+*.exe
+
+# Qt generated files
+*_moc.cpp
+moc_*.cpp
+*_autogen/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Executables
+spacemate_cli
+SpacemateGUI
+spacemate-gui
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp

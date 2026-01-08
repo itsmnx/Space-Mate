@@ -139,6 +139,28 @@ vector<BackupEntry> BackupManager::loadBackupIndex() {
     return backups;
 }
 
+// ===== Add backup entry to index =====
+void BackupManager::addBackupIndexEntry(const string& originalPath, const string& backupPath) {
+    string indexFile = getBackupDir() + "/index.txt";
+    ofstream index(indexFile, ios::app);
+    if (index.is_open()) {
+        unsigned long long size = 0;
+        try {
+            if (fs::exists(backupPath)) {
+                size = fs::file_size(backupPath);
+            }
+        } catch (...) {
+            size = 0;
+        }
+        
+        index << Utils::getCurrentTimestamp() << "|"
+              << originalPath << "|"
+              << backupPath << "|"
+              << size << "\n";
+        index.close();
+    }
+}
+
 // ===== Copy file helper =====
 bool BackupManager::copyFile(const string& source, const string& dest) {
     ifstream src(source, ios::binary); if (!src.is_open()) return false;
