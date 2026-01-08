@@ -5,7 +5,6 @@
 
 **An intelligent, offline disk space manager built with OS-level system calls**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Linux](https://img.shields.io/badge/Platform-Linux-blue.svg)](https://www.linux.org/)
 [![Language: C/C++](https://img.shields.io/badge/Language-C%2FC%2B%2B-green.svg)](https://isocpp.org/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
